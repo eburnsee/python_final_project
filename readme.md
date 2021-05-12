@@ -39,7 +39,11 @@ This program creates the analysis charts using Matplotlib. I explain the charts 
 
 ### Fugitives by Race
 ![Fugitive Race](race.png)
+
 ![Fugitive White Gauge](myDial_white.png)
+
 ![Fugitive Black Gauge](myDial_black.png)
+
 ![Fugitive Hispanic Gauge](myDial_Hispanic.png)
+
 ![Fugitive Asian Gauge](myDial_asian.png)
