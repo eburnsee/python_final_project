@@ -3,7 +3,7 @@ The object of this inquiry is to determine what characteristics are most common 
 ## Process Order
 ### Fugitive.py
 Fugitive.py is not meant to be run, it is meant to live in the same directory of the forthcoming files, since they will rely on the Fugitive class as a way of binding the attributes of each fugitive. Below is a screenshot of part of the code.
-![Fugitive Class](fugitive_py_sc.jpeg)
+![Fugitive Class](fugtive_py_sc.jpg)
 
 ### fbi_fugitive_scrape.py
 This program uses requests and BeautifulSoup scrape each fugitive's data from the pages of "https://www.fbi.gov/wanted/fugitives". The program iterates through each page in the general list, scrapes the names and url for each individual fugitive and initializes the fugitive object for each fugitive. Then it proceeds to iterate through each fugitive's URL and add all their data as class attributes. Finally, all the fugitive data is written to a CSV in a tidy manner.
@@ -14,7 +14,7 @@ This program functions similarly to the last one, however, using Selenium instea
 Once all fugitive pages are iterated through, their records are appended to the CSV.
 ### fugitives_file.csv
 The fugitives CSV contains all the information of interest (and a bit extra) for each fugitive.
-![Fugitive CSV](fugitive_csv_sc.jpeg)
+![Fugitive CSV](fugitive_csv_sc.jpg)
 
 ### fugitives_db.py
 This program uses Psycopg2 to interact with PostgreSQL. One function initializes our semi-normalized tables in the database. The next function reads in our fugitive CSV data and utilizes a SQL stored proceedure to import the data to the database.
@@ -22,7 +22,7 @@ This program uses Psycopg2 to interact with PostgreSQL. One function initializes
 Note that this program works with my database "testdb" and my password that is attained from user input.
 
 When the file is run, one should press "1" to initialize the tables, then "2" to add the records. Then press "3" to quit.
-![Fugitive Database Creation](fugitive_db_sc.jpeg)
+![Fugitive Database Creation](fugitive_db_sc.jpg)
 
 ### fugitive_charts.py
 This program creates the analysis charts using Matplotlib. I explain the charts below.
